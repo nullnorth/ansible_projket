@@ -1,11 +1,7 @@
-- 
-  gather_facts: false
+- gather_facts: false
   hosts: all
   name: "**Gathering Information about Hosts**"
   tasks: 
-    - 
-      win_user: ~
-        name: Usertesting
-        password: Ihatethis123
-        state: present
+  - name: "**Running powershell on remote host**" 
+    win_raw: "get-netipaddress"
       
