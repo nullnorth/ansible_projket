@@ -1,0 +1,8 @@
+name: "**Gathering Information about Hosts**"
+ hosts: all
+ gather_facts: false
+ tasks:
+  - name: Usertesting
+    win_user:
+    password: "Ihatethis123"
+    state: present
