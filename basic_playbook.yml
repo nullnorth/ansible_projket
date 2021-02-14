@@ -3,5 +3,5 @@
   name: "**Gathering Information about Hosts**"
   tasks: 
   - name: "**Running powershell on remote host**" 
-    win_raw: "get-netipaddress"
+    raw: "get-netipaddress"
       
