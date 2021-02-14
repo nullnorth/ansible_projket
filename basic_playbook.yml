@@ -1,8 +1,11 @@
-name: "**Gathering Information about Hosts**"
- hosts: all
- gather_facts: false
- tasks:
-  - name: Usertesting
-    win_user:
-    password: "Ihatethis123"
-    state: present
+- 
+  gather_facts: false
+  hosts: all
+  name: "**Gathering Information about Hosts**"
+  tasks: 
+    - 
+      win_user: ~
+        name: Usertesting
+        password: Ihatethis123
+        state: present
+      

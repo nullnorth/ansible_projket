@@ -1,0 +1,4 @@
+ansible_connection: winrm
+ansible_password: P@ssw0rd
+ansible_user: Administrator
+ansible_winrm_transport: basic
